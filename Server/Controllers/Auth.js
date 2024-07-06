@@ -11,6 +11,6 @@ exports.sendOtp = async(req,res)=>{
         }
     }
     catch{
-
+        console.log("Could not send OTP");
     }
 }
