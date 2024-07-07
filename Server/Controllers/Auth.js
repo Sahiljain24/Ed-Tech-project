@@ -6,11 +6,13 @@ exports.sendOtp = async(req,res)=>{
         if(!isAlreadyPresent){
             console.log("user already Present");
             res.json({
-
+              
             })
         }
     }
     catch{
         console.log("Could not send OTP");
+        error:
     }
+    
 }
