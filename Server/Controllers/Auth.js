@@ -10,6 +10,7 @@ exports.sendOtp = async(req,res)=>{
             return res.status(401).json({
                 success:false,
                 message:'User already registered',
+                success:true;
             })
         }
         }
