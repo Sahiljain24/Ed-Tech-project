@@ -1,4 +1,4 @@
 const express = require("express");
-const app = express.json
+const app = express();
 require("dotenv");
 
