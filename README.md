@@ -1,2 +1,2 @@
 Ed tech platform
-Mern stack
+Mern stack.
