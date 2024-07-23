@@ -38,14 +38,23 @@ exports.sendOtp = async(req,res)=>{
             email,otp
         };
         const otpBody = await OTP.create(otpPayload);
+        console.log(otpBody);
 
+        res.status(200).res({
+            success:true,
+            message:"OTP sent successfully",
+            otp,
+        })
 
 
 
         }
  
     catch(err){
-        
+        res.status(500).json({
+            success:false,
+            message:err.message,
+        })
     }
     
 }
