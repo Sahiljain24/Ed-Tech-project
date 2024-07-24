@@ -58,3 +58,21 @@ exports.sendOtp = async(req,res)=>{
     }
     
 }
+
+exports.signUp=(req,res)=>{
+    try{
+        const {
+            firstName,
+            lastName, 
+            email,
+            password,
+            confirmPassword,
+            accountType,
+            contactNumber, 
+            otp
+        } = req.body;
+    }
+    catch(err){
+
+    }
+}
