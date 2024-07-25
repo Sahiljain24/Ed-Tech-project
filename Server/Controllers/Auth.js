@@ -73,6 +73,9 @@ exports.signUp=(req,res)=>{
         } = req.body;
     }
     catch(err){
-
+       res.status(404).json({
+           success:false,
+           
+       })
     }
 }
